@@ -1,5 +1,4 @@
 
-<!--
 README.md du projet "template-search"
 
 Ce fichier documente le site web de recherche de modèles (template-search).
