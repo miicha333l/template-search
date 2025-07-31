@@ -1,0 +1,181 @@
+
+
+/* Style général du corps de la page */
+body{
+	font-family: 'Open Sans', Arial, sans-serif; /* Police moderne et lisible */
+	margin: 0; /* Suppression des marges par défaut */
+	background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); /* Dégradé doux */
+	color: #222;
+}
+
+
+
+/* Conteneur principal centré et avec ombre légère */
+main{
+	width: 1100px;
+	margin:40px auto;
+	background: #fff;
+	padding: 40px;
+	border-radius: 18px;
+	border: 1px solid #e2e8f0;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* Titre principal de la page */
+main h1{
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #2563eb;
+	letter-spacing: 2px;
+}
+
+
+
+/* Bloc d'une entrée de résultat sous forme de carte */
+.entry{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #f1f5f9;
+	border-radius: 14px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	margin-bottom: 24px;
+	padding: 24px 32px;
+	transition: box-shadow 0.2s, transform 0.2s;
+	border: none;
+}
+.entry:hover {
+	box-shadow: 0 8px 24px rgba(37,99,235,0.12);
+	transform: translateY(-2px) scale(1.01);
+}
+
+
+
+/* Positionnement horizontal des blocs gauche et droite */
+.entry .right, .entry .left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+/* Bloc gauche contenant l'image et le texte */
+.entry .left{
+	flex: 2;
+	gap: 8px;
+}
+
+
+
+/* Image de l'entrée, arrondie et ombrée */
+.entry .left img{
+	height: 120px;
+	width: 120px;
+	object-fit: cover;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	margin-bottom: 12px;
+}
+
+
+
+/* Bloc droit contenant le prix et la note */
+.entry .right{
+	flex: 1;
+	align-items: flex-end;
+	gap: 8px;
+	padding-left: 24px;
+	border-left: 2px solid #2563eb22;
+	margin-left: 24px;
+}
+
+
+
+/* Couleur et effet des étoiles de notation */
+.entry .right span{
+	color: #fbbf24;
+	font-size: 1.3em;
+	margin-right: 2px;
+	transition: color 0.2s;
+}
+.entry .right span:hover {
+	color: #2563eb;
+}
+/* Barre de navigation améliorée */
+header nav {
+	background: #2563eb;
+	padding: 16px 0;
+	text-align: center;
+	border-radius: 0 0 12px 12px;
+	margin-bottom: 16px;
+}
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	padding: 8px 24px;
+	border-radius: 6px;
+	transition: background 0.2s;
+}
+header nav a:hover {
+	background: #1e40af;
+}
+
+
+
+/* Responsive : adaptation du conteneur principal pour les écrans < 1200px */
+@media(max-width: 1200px){
+	main{
+		width: 98%;
+		padding: 10px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+}
+
+
+
+/* Responsive : simplification de l'affichage pour les écrans < 850px */
+@media(max-width: 850px){
+	.entry{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 16px;
+	}
+	.entry .left, .entry .right{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	.entry .left img{
+		height: 100px;
+		width: 100px;
+		margin-bottom: 8px;
+	}
+}
+
+
+
+/* Responsive : affichage centré et images adaptatives pour les petits écrans < 550px */
+@media(max-width: 550px){
+	.entry{
+		text-align: center;
+		padding: 8px;
+	}
+	.entry .left img{
+		width: 80px;
+		height: 80px;
+		margin-bottom: 8px;
+	}
+	.entry .right, .entry .left{
+		margin: 0;
+		padding: 0;
+	}
+}

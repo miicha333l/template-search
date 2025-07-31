@@ -1,78 +1,93 @@
+<!-- Déclaration du type de document HTML5 -->
 <!DOCTYPE html>
-<html>
+<!-- Début du document HTML, langue française -->
+<html lang="fr">
 <head>
-	<title>Résultats de recherche</title>
-	<link rel="stylesheet" type="text/css" href="search.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Métadonnées et liens vers les feuilles de style -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Recherche - template-search</title>
+    <link rel="stylesheet" type="text/css" href="css/search.css"> <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!-- Icônes FontAwesome -->
 </head>
 <body>
-	<main>
-		<h1>Résultats de recherche</h1>
-		<div class="entry">
-			<div class="left">
-				<img src="../image.jpg" />
-				<h2>Titre de l'entrée</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</div>
-			<div class="right">
-				<h3>19 €</h3>
-				<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-				<p>3765 votes</p>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="left">
-				<img src="../image.jpg" />
-				<h2>Titre de l'entrée</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</div>
-			<div class="right">
-				<h3>19 €</h3>
-				<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-				<p>3765 votes</p>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="left">
-				<img src="../image.jpg" />
-				<h2>Titre de l'entrée</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</div>
-			<div class="right">
-				<h3>19 €</h3>
-				<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-				<p>3765 votes</p>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="left">
-				<img src="../image.jpg" />
-				<h2>Titre de l'entrée</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</div>
-			<div class="right">
-				<h3>19 €</h3>
-				<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-				<p>3765 votes</p>
-			</div>
-		</div>
-		<div class="entry">
-			<div class="left">
-				<img src="../image.jpg" />
-				<h2>Titre de l'entrée</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-			</div>
-			<div class="right">
-				<h3>19 €</h3>
-				<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-				<p>3765 votes</p>
-			</div>
-		</div>
-	</main>
+    <!-- En-tête du site avec navigation et titre -->
+    <header>
+        <nav>
+            <a href="index.html" aria-label="Accueil">Accueil</a>
+            <a href="search.html" aria-label="Recherche">Recherche</a>
+        </nav>
+        <h1 style="display:flex;align-items:center;justify-content:center;gap:12px;color:#2563eb;font-size:2.5em;letter-spacing:2px;">
+            <span class="fa fa-search" aria-hidden="true" style="color:#2563eb;"></span>
+            Résultats de recherche
+        </h1>
+    </header>
+    <!-- Contenu principal -->
+    <main>
+        <section aria-label="Liste des résultats">
+            <!-- Résultat 1 -->
+            <article class="entry">
+                <div class="left">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Ordinateur portable moderne" />
+                    <h2>Ordinateur portable</h2>
+                    <p>Un ordinateur portable performant pour le travail et le divertissement, avec écran Full HD et SSD rapide.</p>
+                </div>
+                <div class="right">
+                    <h3>799 €</h3>
+                    <span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star-half-alt" aria-label="Note"></span>
+                    <p>124 votes</p>
+                </div>
+            </article>
+            <!-- Résultat 2 -->
+            <article class="entry">
+                <div class="left">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Appareil photo reflex" />
+                    <h2>Appareil photo Reflex</h2>
+                    <p>Capturez des images incroyables avec ce reflex numérique, idéal pour les amateurs et professionnels.</p>
+                </div>
+                <div class="right">
+                    <h3>499 €</h3>
+                    <span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span>
+                    <p>210 votes</p>
+                </div>
+            </article>
+            <!-- Résultat 3 -->
+            <article class="entry">
+                <div class="left">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Chaussures de sport" />
+                    <h2>Chaussures de sport</h2>
+                    <p>Des chaussures légères et confortables pour la course à pied ou le sport en salle.</p>
+                </div>
+                <div class="right">
+                    <h3>89 €</h3>
+                    <span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star-half-alt" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span>
+                    <p>58 votes</p>
+                </div>
+            </article>
+            <!-- Résultat 4 -->
+            <article class="entry">
+                <div class="left">
+                    <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=400&q=80" alt="Montre connectée" />
+                    <h2>Montre connectée</h2>
+                    <p>Suivez votre activité, recevez vos notifications et améliorez votre quotidien avec cette montre connectée élégante.</p>
+                </div>
+                <div class="right">
+                    <h3>149 €</h3>
+                    <span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star" aria-label="Note"></span><span class="fa fa-star-half-alt" aria-label="Note"></span>
+                    <p>97 votes</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Pied de page -->
+    <footer style="background:#2563eb;color:#fff;padding:24px 0;text-align:center;margin-top:40px;border-radius:12px 12px 0 0;">
+        <div style="margin-bottom:8px;">
+            <span class="fa fa-github" aria-hidden="true" style="margin-right:8px;"></span>
+            <span class="fa fa-envelope" aria-hidden="true" style="margin-right:8px;"></span>
+            <span class="fa fa-copyright" aria-hidden="true" style="margin-right:8px;"></span>
+        </div>
+        <p style="margin:0;font-size:1.1em;">&copy; 2025 - Tous droits réservés | Réalisé par miicha333l</p>
+        <p style="margin:0;font-size:0.95em;">Contact : <a href="mailto:contact@template-search.com" style="color:#fbbf24;text-decoration:none;">contact@template-search.com</a></p>
+    </footer>
 </body>
 </html>
